@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: #f5f7fb;
+  color: #222;
+}
+
+.header {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.track {
+  font-size: 12px;
+  color: #ff7a00;
+  font-weight: bold;
+}
+
+.header-desc {
+  margin-top: 8px;
+  color: #666;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* 요약 카드 */
+.summary-grid {
+  display: grid;
+  gap: 20px;
+}
+
+@media (max-width: 767px) {
+  .summary-grid { grid-template-columns: 1fr; }
+}
+@media (min-width: 768px) {
+  .summary-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 1024px) {
+  .summary-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+.summary-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  padding-bottom: 16px;
+}
+
+.highlight {
+  border: 2px solid #ff7a00;
+}
+
+.profile {
+  position: relative;
+}
+
+.profile img {
+  width: 100%;
+  display: block;
+}
+
+.badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #ff7a00;
+  color: #fff;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 12px;
+}
+
+.summary-card h3 {
+  margin: 14px 16px 4px;
+}
+
+.part {
+  margin: 0 16px;
+  color: #ff7a00;
+  font-size: 14px;
+}
+
+.one-line {
+  margin: 8px 16px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* 상세 카드 */
+.detail-section {
+  margin-top: 80px;
+}
+
+.detail-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 20px;
+}
+
+.detail-part {
+  color: #ff7a00;
+  margin-bottom: 12px;
+}
+
+.detail-text {
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.detail-card ul {
+  margin-left: 20px;
+  margin-bottom: 12px;
+}
+
+.quote {
+  background: #fff5ec;
+  padding: 12px;
+  border-radius: 8px;
+}
